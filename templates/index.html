@@ -6,38 +6,34 @@
             href="{{ url_for('static', filename='dist/css/output.css') }}"
         />
     </head>
-    <body class="bg-red-300">
-        <p id="title">Portfolio :3</p>
-        <ul>
+    <body>
+        <p id="title" class="text-4xl text-center">Portfolio</p>
+        <section>
 
-            <section id="newsSite">
-                <p>News Site</p>
-                <p>A custom News Site </p>
-                <a href="https://github.com/MHWatchy/news-server-frontend">Github Repo Link</a >
-                <a href="https://mhwatchy-news-site.netlify.app/">Hosted Site Link</a >
+            <section id="newsSite" class="p-1 m-4 rounded border-2 border-black">
+                <a class="text-2xl text-left" href="https://mhwatchy-news-site.netlify.app/">News Site</a>
+                <p class="my-1 text-left">A custom News Site created using ReactJS. Allows users to read articles on the site and interact with them by voting on them or by leaving a comment. Users can use filters to help look for articles related to a specific topic that would interest them. Communicates with an API (see next) using Axios to retieve the data to be shown to the user. Created as a solo project.</p>
+                <a href="https://github.com/MHWatchy/news-server-frontend">Github Repo</a>
             </section>
 
-            <section id="newsSiteApi">
-                <p>News Site Api</p>
-                <p>Description, include what it does and tech stack</p>
-                <a href="https://github.com/MHWatchy/news-server-project">Github Repo Link</a >
-                <a href="https://news-server-k1ka.onrender.com/api">Hosted Site Link</a >
+            <section id="newsSiteAPI" class="p-1 m-4 rounded border-2 border-black">
+                <a class="text-2xl text-left" href="https://news-server-k1ka.onrender.com/API">News Site API</a>
+                <p class="my-1 text-left">The API backend for the News Site (see previous) created using Node.js and Express. The 'home page' lists all the possible endpoints in the api and the types of requests that can be made to those endpoints, featuring examples of both request and response objects. The databases are managed using PostgreSQL. Created as a solo project.</p>
+                <a href="https://github.com/MHWatchy/news-server-project">Github Repo</a>
             </section>
 
-            <section id="treasureHunt">
-                <p>Treasure Hunt</p>
-                <p>Description, include what it does and tech stack</p>
-                <a href="https://github.com/ELR143/treasure-hunt-frontend">Github Repo Link</a >
-                <a href="https://treasure-hunters.netlify.app/map">Hosted Site Link</a >
+            <section id="treasureHunt" class="p-1 m-4 rounded border-2 border-black">
+                <a class="text-2xl text-left" href="https://treasure-hunters.netlify.app/map">Treasure Hunt</a>
+                <p class="my-1 text-left">A game designed around users going outside and using an interactive map, created using the Google Maps APi, to find 'treasures' hidden in the real world. Users can then compete with friends and compare who had found more treasures between each other. Created using NextJS and uses the Google Maps API to generate the map component, and uses an api (see next) to retieve data regarding user treasure information. Created as a team project.</p>
+                <a href="https://github.com/ELR143/treasure-hunt-frontend">Github Repo</a>
             </section>
 
-            <section id="treasureHuntApi">
-                <p>Treasure Hunt Api</p>
-                <p>Description, include what it does and tech stack</p>
-                <a href="https://github.com/LW95x/treasure-hunt-backend-host">Github Repo Link</a >
-                <a href="https://treasure-hunt-backend-test.onrender.com/#/">Hosted Site Link</a >
+            <section id="treasureHuntAPI" class="p-1 m-4 rounded border-2 border-black">
+                <a class="text-2xl text-left" href="https://treasure-hunt-backend-test.onrender.com/#/">Treasure Hunt API</a>
+                <p class="my-1 text-left">The API backend for the Treasure Hunt game (see previous) created using Django REST Framework (DRF) to manage and communicate with the databases using PostgreSQL. Uses DRF-Swagger to generate an interactive page of every endpoint available to the API and the functionality to make those requests manually. Created as a team project.</p>
+                <a href="https://github.com/LW95x/treasure-hunt-backend-host">Github Repo</a>
             </section>
 
-        </ul>
+        </section>
     </body>
 </html>
